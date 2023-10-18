@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=], initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Manual Git</title>
+    </head>
+
+    <body>  
+       <img src="img/git.jpg" alt="logoGit"> 
+       <h2>Uma Breve História sobre o Git</h3>
+        <p>Para entendermos como o Git funciona vamos voltar um pouco no tempo como muitas coisas na vida. Desenvolvido pelo mesmo criador do sistema Linux no ano de 2005, Linus Torvalds, o Git se espalhou entre os Devs.
+
+            Inicialmente, as pessoas desenvolvedoras que trabalhavam no kernel (núcleo) do Linux usavam o sistema do BitKeeper. Porém, os criadores removeram o acesso gratuito após uma polêmica sobre direitos autorais.
+            
+            Insatisfeito, Torvalds decidiu criar um sistema semelhante com código aberto, dando origem assim ao Git. E, só por curiosidade, a palavra Git vem de uma gíria usada por ingleses que remete à “cabeça dura”, ou seja, pessoas que acham que sempre têm razão.</p>
+        <h2>Comandos Básicos</h2>
+        <ul>
+            <li>ls - Listar Sistema, todas as pastas e localidades da nossa maquina.</li>
+            <li>ctrl + L = Limpa a tela de códigos. </li>
+            <li>ctrl + ↑ (seta) = Faz com que apareça o histórico de comandos que já havíamos utilizado.</li>
+            <li>cd = Acessar o diretório (Acessar a Pasta).</li>
+            <li>cd .. = Voltar para a pasta anterior.</li>
+            <li>cd ./ = Adicionamos todo o caminho para onde queremos ir.</li>
+            <li>mkdir = Cria uma pasta</li>
+            <li>pwd = Nos mostra onde estamos da nossa maquina.
+        </ul>
+        <h2>E agora?</h2>
+        <p>Após abrir o seu git bash devemos aplicar algumas configurações que iremos iniciar agora.</p>
+        <h3>Configurações iniciais</h3>
+        <ul>
+            <li>git config --global user.name “matheus” = Para configurar e registrar o nome do usuário dentro do git.</li>
+            <li>git config --global user.email “email” = Assim registramos um e-mail no git.</li>
+            <li>git config --global init.defautbranch = Definimos qual será a raiz do nosso repositório, main ou master. (Já vou explicar o que seria a Branch)</li>
+        </ul>
+        <p>Depois de realizarmos esses comandos dentro do git podemos iniciar o nosso reposítorio. Mas antes preciso te explicar o que seria uma Branch de forma simples claro!</p>
+        <ul>
+            <li>git branch = São versões do desenvolvimento, onde podemos acompanhar cada feito do projeto.</li>
+        </ul>
+        <h2>Iniciando os Trabalhos</h2>
+        <ul>
+            <li>git init = Iniciamos o controle do git dentro da pagina (Fazendo o monitoramento da pagina), toda e qualquer alteração a partir de agora ficara registrado.</li>
+            <li>git remote add origin : (sempre será usado) para dicionar o endereço remoto (endereço do github)</li>
+            <li>git remote --v : ele serve para mostrar a qual repositório remoto está ligado (configurando remoto o repositório ligado)</li>
+            <li>git remote rm origin : remover a ligação entre o local e o remot</li>
+            <li>git add "nome do arquivo"txt = para  o git enxergar as mudanças no arquivo</li>
+            <li>git add . = adiciona tudo que está na página do repositorio</li>
+            <li>git commit (ponto de restauração) - comitar tudo que foi feito usando um editor passando a mensagem (quase nunca usar)</li>
+            <li>git commit -m "alteração do novoArquivo.txt" : permite passar uma mensagem com informação de alteração detalhada</li>
+            <li>git commit --amend -m : para corrigir (quando errar) o commit anterior</li>
+            <li>git log -h - Vai mostrar todas as funções que aquele comando oferece, por exemplo, o log.</li>
+            <li>git log = Mostra quem alterou, quando alterou e oque alterou do repositorio e aparece o commit feito.</li>
+            <li>git log --oneline : ele mostra somente o que foi feito sem se importar com data e quem fez.</li>
+            <li>git log --author “nome ou email da pessoa“ : serve para saber o que a pessoa em especifico fez. obs: ele é sensível a caixa alta</li>
+            <li>git log --grep “inicial” : ele pesquisa na mensagem especifica que você buscar em todos commits</li>
+            <li>git log shortlog - mostra de forma resumida todo o log</li>
+        </ul>
+        <p>obs: origin/master, origin/HEAD (é o que está no github) <br>
+            obs: origin (remoto) head -> master (local)</p>
+        <h3>O que é comitar?</h3>    
+        <p>Em Construção</p>
+        <p>Por Fim deixo o site oficial do Git lá você pode acessar a documentação da ferramenta e fazer o próprio download da ferramenta</p>
+        <nav>
+            <ul>
+              <li><a href="https://git-scm.com/" target="_blank">Site Oficial Git</a>
+            </ul>
+        </nav>
+        <h2>Ciclo da Vida</h2>
+        <p>Abaixo temos de uma forma exemplificada de como funciona o ciclo da vida do Git:</p>
+        <img src="img/cicloDaVida.png" alt="CicloDaVida">
+    </body>
+
+</html>
